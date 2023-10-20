@@ -63,6 +63,7 @@ const Intro = () => {
     let width6 = 1;
 
     let isPaused = false;
+    
     let id = setInterval(() => {
       if (!isPaused) {
         frame();
