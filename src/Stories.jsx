@@ -30,11 +30,11 @@ const Stories = () => {
       </h2>
 
       <div className="w-[95%] mx-auto mb-[3.125rem]">
-        <div className="flex items-center justify-center gap-[1.25rem] mb-[1.25rem] max-lg:flex-col">
+        <div className="flex items-center justify-center gap-[1.25rem] mb-[1.25rem] max-lg:flex-col max-md:h-[93.75rem] max-md:flex-1">
           <a
             href="#"
             ref={story1Ref}
-            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full"
+            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full max-lg:flex-1"
           >
             <div className="z-10">
               <h5 className="font-medium text-lg">
@@ -48,7 +48,7 @@ const Stories = () => {
           <a
             href="#"
             ref={story2Ref}
-            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full"
+            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full max-md:flex-1"
           >
             <div className="z-10">
               <h5 className="font-medium text-lg">
@@ -62,7 +62,7 @@ const Stories = () => {
           <a
             href="#"
             ref={story3Ref}
-            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full"
+            className="h-[31.25rem] flex-[0.3333] flex flex-col justify-end p-[1.5625rem] text-white relative max-lg:w-full max-md:flex-1"
           >
             <div className="z-10">
               <h5 className="font-medium text-lg">
@@ -78,7 +78,7 @@ const Stories = () => {
           <a
             href="#"
             ref={story4Ref}
-            className="flex-[0.5] h-[21.875rem] flex flex-col justify-end p-[1.5625rem] text-white relative max-md:w-full"
+            className="flex-[0.5] h-[21.875rem] flex flex-col justify-end p-[1.5625rem] text-white relative max-md:w-full max-md:flex-1"
           >
             <div className="z-10">
               <h5 className="font-medium text-lg">
@@ -96,7 +96,7 @@ const Stories = () => {
           <a
             href="#"
             ref={story5Ref}
-            className="flex-[0.5] h-[21.875rem] flex flex-col justify-end p-[1.5625rem] text-white relative max-md:w-full"
+            className="flex-[0.5] h-[21.875rem] flex flex-col justify-end p-[1.5625rem] text-white relative max-md:w-full max-md:flex-1"
           >
             <div className="z-10">
               <h5 className="font-medium text-lg">

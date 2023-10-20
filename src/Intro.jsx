@@ -5,12 +5,6 @@ import giveawayDesktop from "./assets/giveaway.webp";
 import rogStrixDesktop from "./assets/rog-strix.webp";
 import alanWakeDesktop from "./assets/alan-wake.webp";
 import rogZephyrusG14Desktop from "./assets/rog-zephyrus-g14.webp";
-import asusZ790Mobile from "./assets/asus-z790-mobile.webp";
-import evangelionMobile from "./assets/evangelion-mobile.webp";
-import giveawayMobile from "./assets/giveaway-mobile.webp";
-import rogStrixMobile from "./assets/rog-strix-mobile.webp";
-import alanWakeMobile from "./assets/alan-wake-mobile.webp";
-import rogZephyrusG14Mobile from "./assets/rog-zephyrus-g14-mobile.webp";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -92,20 +86,12 @@ const Intro = () => {
       progress1Ref.current.style.width = width1 + "%";
       sliderRef.current.style.background = `url(${asusZ790Desktop}) no-repeat center center/cover`;
 
-      if (window.innerWidth < 1024) {
-        sliderRef.current.style.background = `url(${asusZ790Mobile}) no-repeat center center/cover`;
-      }
-
       if (width1 >= 100) {
         width1 = 100;
         progress1Ref.current.style.background = "#3c3c3c";
         width2++;
         progress2Ref.current.style.width = width2 + "%";
         sliderRef.current.style.background = `url(${evangelionDesktop}) no-repeat center center/cover`;
-
-        if (window.innerWidth < 1024) {
-          sliderRef.current.style.background = `url(${evangelionMobile}) no-repeat center center/cover`;
-        }
       }
 
       if (width2 >= 100) {
@@ -114,10 +100,6 @@ const Intro = () => {
         width3++;
         progress3Ref.current.style.width = width3 + "%";
         sliderRef.current.style.background = `url(${giveawayDesktop}) no-repeat center center/cover`;
-
-        if (window.innerWidth < 1024) {
-          sliderRef.current.style.background = `url(${giveawayMobile}) no-repeat center center/cover`;
-        }
       }
 
       if (width3 >= 100) {
@@ -126,10 +108,6 @@ const Intro = () => {
         width4++;
         progress4Ref.current.style.width = width4 + "%";
         sliderRef.current.style.background = `url(${rogStrixDesktop}) no-repeat center center/cover`;
-
-        if (window.innerWidth < 1024) {
-          sliderRef.current.style.background = `url(${rogStrixMobile}) no-repeat center center/cover`;
-        }
       }
 
       if (width4 >= 100) {
@@ -138,10 +116,6 @@ const Intro = () => {
         width5++;
         progress5Ref.current.style.width = width5 + "%";
         sliderRef.current.style.background = `url(${alanWakeDesktop}) no-repeat center center/cover`;
-
-        if (window.innerWidth < 1024) {
-          sliderRef.current.style.background = `url(${alanWakeMobile}) no-repeat center center/cover`;
-        }
       }
 
       if (width5 >= 100) {
@@ -150,10 +124,6 @@ const Intro = () => {
         width6++;
         progress6Ref.current.style.width = width6 + "%";
         sliderRef.current.style.background = `url(${rogZephyrusG14Desktop}) no-repeat center center/cover`;
-
-        if (window.innerWidth < 1024) {
-          sliderRef.current.style.background = `url(${rogZephyrusG14Mobile}) no-repeat center center/cover`;
-        }
       }
 
       if (width6 >= 100) {
@@ -244,7 +214,10 @@ const Intro = () => {
       <div className="bg-red-500 text-center text-white text-sm py-[0.625rem]">
         Log in to the ROG Elite Rewards program now!
       </div>
-      <div ref={sliderRef} className="h-[34.375rem] duration-300 max-lg:h-[100vh]">
+      <div
+        ref={sliderRef}
+        className="h-[34.375rem] duration-300 max-lg:h-[100vh]"
+      >
         <div className="flex items-center gap-[0.3125rem] absolute bottom-[1.25rem] left-[50%] translate-x-[-50%]">
           <div className="slider w-[4.6875rem] h-[1.5625rem] bg-[#3c3c3c] relative max-lg:w-[3.125rem] max-md:w-[1.875rem]">
             <div
